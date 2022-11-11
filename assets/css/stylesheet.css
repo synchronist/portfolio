@@ -1,0 +1,130 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+:root
+{
+    --cor-primaria-success: rgb(75, 200, 138);
+    --cor-hover-success: rgb(116, 158, 137);
+    --cor-secundaria-success: rgb(27, 66, 50);
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    display: grid;
+}
+
+footer 
+{
+    display:flex;
+    bottom: 0;
+    height: 6vh;
+    width: 100%;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 1rem;
+    color: white;
+    padding: 0 2rem;
+    text-align: center;
+}
+footer div a
+{
+    text-decoration: none;
+    color: white;
+}
+main div a 
+{
+    color: black;
+}
+footer #linksFooter 
+{
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+main 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 74vh;
+    text-align:center;
+}
+
+header 
+{
+    display: flex;
+
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(150, 247, 94);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+
+.menuMovelAberto 
+{
+    display:flex;
+    background-color: inherit;
+    gap: 1rem;
+}
+
+
+.btn 
+{
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+}
+
+.btn-success
+{
+    background-color: var(--cor-primaria-success);
+    outline: none;
+    color: var(--cor-secundaria-success)
+}
+
+.btn-success:hover 
+{
+    background-color: var(--cor-hover-success);
+}
+
+.btn-success:active 
+{
+    color:var(--cor-primaria-success);
+    background-color: var(--cor-secundaria-success);
+}
+
+#nomePort 
+{
+    background-color: inherit;
+}
+
+.textoContato 
+{
+text-align: center;
+}
+
