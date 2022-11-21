@@ -7,6 +7,24 @@
 
 }
 
+#myVideo
+{
+    position:fixed;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(images/torre.jpg) no-repeat;
+	background-size: cover; 
+}
+main
+{
+    overflow-y: scroll;
+}
+
 :root
 {
     --cor-primaria-success: rgb(75, 200, 138);
@@ -25,6 +43,19 @@ body
     display: grid;
 }
 
+
+.main-port
+{
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 0 2rem;
+}
+.main-desc
+{
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 0 2rem;
+}
 footer 
 {
     display:flex;
@@ -70,10 +101,9 @@ main
 header 
 {
     display: flex;
-
     height: 20vh;
     width: 100%;
-    background-color: rgb(150, 247, 94);
+    background-color: rgba(151, 194, 127, 0.7);
     align-items: center;
     align-content: center;
     justify-content: space-between;
@@ -85,7 +115,6 @@ header
 .menuMovelAberto 
 {
     display:flex;
-    background-color: inherit;
     gap: 1rem;
 }
 
@@ -118,13 +147,12 @@ header
     background-color: var(--cor-secundaria-success);
 }
 
-#nomePort 
-{
-    background-color: inherit;
-}
-
 .textoContato 
 {
 text-align: center;
 }
 
+.principalText
+{
+    color:white;
+}
