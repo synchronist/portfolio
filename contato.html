@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" context="width-device-width, initial-scale-1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,19 +10,19 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <script src="https://kit.fontawesome.com/9142c6bc85.js" crossorigin="anonymous"></script>
     <title>Portfolio - Desafio Iuul!</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
-        <div id="nomePort">Portfolio</div>
+        <div id="nomePort" class="hello"><h3>Portfolio - Fillipy Saraiva</h3></div>
         <div class="menuMovelAberto">
-                <a href="index.html" class="btn btn-success">Página principal</a>
-                <a href="sobre.html" class="btn btn-success">Sobre mim</a>
-                <a href="formacao.html" class="btn btn-success">Formação</a>
-                <a href="atuacao.html" class="btn btn-success">Atuação Profissional</a>
-                <a href="contato.html" class="btn btn-success">Contato</a>
-                <a href="portfolio.html" class="btn btn-success">Portfolio</a>
-                <a href="descricao.html" class="btn btn-success">Descrição da tecnologia</a>
+            <a href="index.html" class="btn btn-success">Página principal</a>
+            <a href="sobre.html" class="btn btn-success">Sobre mim</a>
+            <a href="formacao.html" class="btn btn-success">Formação</a>
+            <a href="atuacao.html" class="btn btn-success">Atuação Profissional</a>
+            <a href="contato.html" class="btn btn-success">Contato</a>
+            <a href="portfolio.html" class="btn btn-success">Portfolio</a>
+            <a href="descricao.html" class="btn btn-success">Descrição da tecnologia</a>
         </div>
     </header>
     <aside>
@@ -32,7 +32,8 @@
         </div>
     </aside>
 
-    <main>
+    <main class="main-bg">
+        <style> .main-bg {background-image: url("assets/images/bg.jpg"); background-repeat:no-repeat ; background-size: cover;}</style>
         <div id="contatoPessoal">
             Número de celular: +55 (013) 97826-8263<br>
             E-mail: lip-crs@hotmail.com
@@ -42,19 +43,23 @@
             <h5>Gostaria de me contatar?</h5>
         </div>
         <div>
-            <p>Me encontre pelo LinkedIn pelo link: </p><a href="https://www.linkedin.com/in/fillipy-saraiva-7959aa170/" class="linkedinIcon" target="blank"><i class="fa-brands fa-linkedin"></i></a> 
-            <p>Pelo instagram por esse: </p><a href="https://www.instagram.com/a7xsync/" class="instagramIcon" target="blank"><i class="fa-brands fa-instagram"></i></a>
-            <p>O twitter só de fachada por esse: </p><a href="https://www.twitter.com/a7xsync" class="twitterIcon" target="blank"><i class="fa-brands fa-twitter"></i></a>
-            <p>E o github aqui: </p><a href="https://www.github.com/synchronist" class="githubIcon" target="blank"><i class="fa-brands fa-github"></i></a>
+            <p>Me encontre pelo LinkedIn pelo link: </p><a href="https://www.linkedin.com/in/fillipy-saraiva-7959aa170/"
+                class="linkedinIcon" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+            <p>Pelo instagram por esse: </p><a href="https://www.instagram.com/a7xsync/" class="instagramIcon"
+                target="blank"><i class="fa-brands fa-instagram"></i></a>
+            <p>O twitter só de fachada por esse: </p><a href="https://www.twitter.com/a7xsync" class="twitterIcon"
+                target="blank"><i class="fa-brands fa-twitter"></i></a>
+            <p>E o github aqui: </p><a href="https://www.github.com/synchronist" class="githubIcon" target="blank"><i
+                    class="fa-brands fa-github"></i></a>
         </div>
 
         <div id="formContato">
             <label for="fname">Seu nome: </label><br>
-            <input type="text" id="fname" name="fname"><br> 
-        </div>   
+            <input type="text" id="fname" name="fname"><br>
+        </div>
         <div id="formContato">
             <label for="msg">Sua mensagem: </label><br>
-            <input type="text" id="msg" name="msg" size="100"><br>
+            <textarea rows="10" cols="100" maxlength="500"></textarea><br>
             <input type="submit" value="Enviar">
         </div>
     </main>
@@ -65,15 +70,20 @@
 
 
     <footer>
-            <div id="textoFooter">
-                <h5 id="nomeFooter">Desenvolvido por Fillipy Saraiva ©2022</h5>
-            </div>
-            <div id="linksFooter">
-                <a href="https://www.linkedin.com/in/fillipy-saraiva-7959aa170/" class="linkedinIcon" target="blank"><i class="fa-brands fa-linkedin"></i></a> 
-                <a href="https://www.instagram.com/a7xsync/" class="instagramIcon" target="blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.twitter.com/a7xsync" class="twitterIcon" target="blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.github.com/synchronist" class="githubIcon" target="blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </footer>
-  </body>
+        <div id="textoFooter">
+            <h5 id="nomeFooter">Desenvolvido por Fillipy Saraiva ©2022</h5>
+        </div>
+        <div id="linksFooter">
+            <a href="https://www.linkedin.com/in/fillipy-saraiva-7959aa170/" class="linkedinIcon" target="blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/a7xsync/" class="instagramIcon" target="blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com/a7xsync" class="twitterIcon" target="blank"><i
+                    class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.github.com/synchronist" class="githubIcon" target="blank"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+
 </html>
