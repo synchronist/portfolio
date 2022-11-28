@@ -3,27 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" context="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <script src="https://kit.fontawesome.com/9142c6bc85.js" crossorigin="anonymous"></script>
     <title>Portfolio - Desafio Iuul!</title>
+    <script src="script.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <header>
-        <div id="nomePort" class="hello"><h3>Portfolio - Fillipy Saraiva</h3></div>
-        <div class="menuMovelAberto">
-            <a href="index.html" class="btn btn-success">Página principal</a>
-            <a href="sobre.html" class="btn btn-success">Sobre mim</a>
-            <a href="formacao.html" class="btn btn-success">Formação</a>
-            <a href="atuacao.html" class="btn btn-success">Atuação Profissional</a>
-            <a href="contato.html" class="btn btn-success">Contato</a>
-            <a href="portfolio.html" class="btn btn-success">Portfolio</a>
-            <a href="descricao.html" class="btn btn-success">Descrição da tecnologia</a>
+    <header class="header">
+        <div id="nomePort" class="hello">
+            <h3>Portfolio - Fillipy Saraiva</h3>
         </div>
+        <div class="menuMovelAberto mobile">
+            <a href="index.html" class="btn btn-success paginaInicial" name="paginaInicial" id="paginaInicial">Página principal</a>
+            <a href="sobre.html" class="btn btn-success sobre" name="sobre" id="sobre">Sobre mim</a>
+            <a href="formacao.html" class="btn btn-success formacao" name="formacao" id="formacao">Formação</a>
+            <a href="atuacao.html" class="btn btn-success atuacao" name="atuacao" id="atuacao">Atuação Profissional</a>
+            <a href="contato.html" class="btn btn-success contato" name="contato" id="contato">Contato</a>
+            <a href="portfolio.html" class="btn btn-success portfolio" name="portfolio" id="portfolio">Portfolio</a>
+            <a href="descricao.html" class="btn btn-success descTecnologia" name="descTecnologia" id="descTecnologia">Descrição da tecnologia</a>
+        </div>
+
     </header>
     <aside>
 
@@ -35,45 +39,45 @@
 
         <main class="main-port">
             <style> .main-port {background-image: url("assets/images/bg.jpg"); background-repeat:no-repeat ; background-size: cover;}</style>
-        <div>
-            <img src="assets/images/dinogame.png" alt="Imagem Dino" width="450" height="250">
-            <h1>Projeto Dino Game</h1>
-            <small>
-                Estava estudando apenas por falta de fazer decidi <br>
-                desenvolver como forma de brincadeira algo para meu filho brincar<br>
-                O site foi desenvolvido usando <a href="descricao.html">JavaScript, HTML e CSS</a>.
-            </small><br>
+        <div class="dino-game">
+            <img src="assets/images/dinogame.png" alt="Imagem Dino" class="img-dino">
+            <span>Projeto Dino Game</span>
+            <span>
+                Estava estudando apenas por falta de fazer decidi 
+                desenvolver como forma de brincadeira algo para meu filho brincar
+                O site foi desenvolvido usando <a href="descricao.html">JavaScript, HTML e CSS</a>
+            </span>
             <a href="https://synchronist.github.io/dio-dino-game-sync/" target="blank">O site pode ser acessado
-                aqui</a>.<br>
+                aqui</a>
             <a href="https://github.com/synchronist/dio-dino-game-sync" target="blank">O repositório desse projeto pode
-                ser acessado aqui</a>.
+                ser acessado aqui</a>
         </div>
 
-        <div>
-            <img src="assets/images/htmlcv.png" alt="Imagem Curriculo" width="450" height="250">
-            <h1>Projeto HTML Curriculum Vitae</h1>
-            <small>
-                Primeiro curriculum feito em html para o github<br>
-                Esse projeto não foi finalizado por isso não tem link direto<br>
-                Foi desenvolvido apenas usando <a href="descricao.html">HTML e CSS</a>.
-            </small><br>
+        <div class="html-cv">
+            <img src="assets/images/htmlcv.png" alt="Imagem Curriculo" class="img-cv">
+            <span>Projeto HTML Curriculum Vitae</span>
+            <span>
+                Primeiro curriculum feito em html para o github
+                Esse projeto não foi finalizado por isso não tem link direto
+                Foi desenvolvido apenas usando <a href="descricao.html">HTML e CSS</a>
+            </span>
             <a href="https://github.com/synchronist/firsthtmlcv" target="blank">O repositório desse projeto pode ser
-                acessado aqui</a>.
+                acessado aqui</a>
         </div>
 
-        <div>
-            <img src="assets/images/reactleague.png" alt="Imagem Projeto React" width="450" height="250">
-            <h1>Projeto em React usando API</h1>
-            <small>
-                Uma espécie de "Pokédex" de um jogo online<br>
-                de um jogo online chamado League of Legends <br>
+        <div class="react-league">
+            <img src="assets/images/reactleague.png" alt="Imagem Projeto React" class="img-league">
+            <span>Projeto em React usando API</span>
+            <span>
+                Uma espécie de "Pokédex" de um jogo online
+                de um jogo online chamado League of Legends 
                 (Desenvolvido por um amigo)
-                O site foi desenvolvido usando <a href="descricao.html">JavaScript, SCSS, HTML e React</a>.
-            </small><br>
+                O site foi desenvolvido usando <a href="descricao.html">JavaScript, SCSS, HTML e React</a>
+            </span>
             <a href="https://dnl1.github.io/react-league-of-legends/" target="blank">O site pode ser acessado
-                aqui</a>.<br>
+                aqui</a>
             <a href="https://github.com/dnl1/react-league-of-legends" target="blank">O repositório desse projeto pode
-                ser acessado aqui</a>.
+                ser acessado aqui</a>
         </div>
     </main>
 

@@ -3,29 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" context="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <script src="https://kit.fontawesome.com/9142c6bc85.js" crossorigin="anonymous"></script>
-    
+    <script src="script.js" type="text/javascript"></script>
 
     <title>Portfolio - Desafio Iuul!</title>
 </head>
 
 <body>
-    <header>
-        <div id="nomePort" class="hello"><h3>Portfolio - Fillipy Saraiva</h3></div>
-        <div class="menuMovelAberto">
-            <a href="index.html" class="btn btn-success">Página principal</a>
-            <a href="sobre.html" class="btn btn-success">Sobre mim</a>
-            <a href="formacao.html" class="btn btn-success">Formação</a>
-            <a href="atuacao.html" class="btn btn-success">Atuação Profissional</a>
-            <a href="contato.html" class="btn btn-success">Contato</a>
-            <a href="portfolio.html" class="btn btn-success">Portfolio</a>
-            <a href="descricao.html" class="btn btn-success">Descrição da tecnologia</a>
+    <header class="header">
+        <div id="nomePort" class="hello">
+            <h3>Portfolio - Fillipy Saraiva</h3>
         </div>
+        <div class="menuMovelAberto mobile">
+            <a href="index.html" class="btn btn-success paginaInicial" name="paginaInicial" id="paginaInicial">Página principal</a>
+            <a href="sobre.html" class="btn btn-success sobre" name="sobre" id="sobre">Sobre mim</a>
+            <a href="formacao.html" class="btn btn-success formacao" name="formacao" id="formacao">Formação</a>
+            <a href="atuacao.html" class="btn btn-success atuacao" name="atuacao" id="atuacao">Atuação Profissional</a>
+            <a href="contato.html" class="btn btn-success contato" name="contato" id="contato">Contato</a>
+            <a href="portfolio.html" class="btn btn-success portfolio" name="portfolio" id="portfolio">Portfolio</a>
+            <a href="descricao.html" class="btn btn-success descTecnologia" name="descTecnologia" id="descTecnologia">Descrição da tecnologia</a>
+        </div>
+
     </header>
     <aside>
 
@@ -36,7 +39,13 @@
     </aside>
 
     <main class="main-desc">
-        <style> .main-desc {background-image: url("assets/images/bg.jpg"); background-repeat:no-repeat ; background-size: cover;}</style>
+        <style>
+            .main-desc {
+                background-image: url("assets/images/bg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
         <div class="deschtml">
             <h1>HTML5</h1>
             <a href="deschtml.html"><i class="fa-brands fa-html5"></i></a>
