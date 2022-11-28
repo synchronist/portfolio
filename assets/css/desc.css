@@ -14,18 +14,26 @@
 .text-desc
 {
     text-align:center;
-    padding-top: 25px;
+    padding: 25px;
 }
 i {
     font-size: 100px;
 }
 
 .d-flex-3 {
-    padding-top: 25px;
     gap: 50px;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 25px;
     align-items: center;
+}
+
+
+@media screen and (max-width: 768px)
+{
+
+.mobile {
+    flex-direction: column ;
+}
+
 }

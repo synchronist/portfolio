@@ -1,5 +1,7 @@
-
-
+.btn-success:active
+{
+    background-color: white;
+}
 .menuIluminado {
     background-color: white !important;
 }
@@ -190,6 +192,13 @@ header {
     cursor: pointer;
     transition: background .3s;
     border-radius: 5px;
+}
+.ilumina {
+    background: white !important;
+}
+.btn:active{
+    color: var(--cor-primaria-success);
+    background-color: var(--cor-secundaria-success);
 }
 
 .btn-success {

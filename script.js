@@ -1,18 +1,14 @@
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
 
+    var current = document.getElementsByClassName("ilumina");
 
-addEventListener('click', (event) => {
-    const menuItemList = {
-        paginaInicial: document.getElementById("paginaInicial"),
-        sobre: document.getElementById("sobre"),
-        formacao: document.getElementById("formacao"),
-        atuacao: document.getElementById("atuacao"),
-        contato: document.getElementById("contato"),
-        portfolio: document.getElementById("portfolio"),
-        descTecnologia: document.getElementById("descTecnologia")
+    if (current.length > 0) {
+
+      current[0].className = current[0].className.replace("ilumina", "");
+
     }
-    Object.values(menuItemList).forEach((item) => {
-        item.classList.remove("menuIluminado");
-    })
-    menuItemList[event.target.name].classList.add("menuIluminado");
-    console.log(menuItemList[event.target.name]);
-});
+
+    this.className += "ilumina";
+  });
+}
