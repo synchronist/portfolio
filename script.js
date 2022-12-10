@@ -1,14 +1,31 @@
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+let form = document.querySelector("#formContato");
+const array = [];
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-    var current = document.getElementsByClassName("ilumina");
+  var nome = JSON.stringify(event.target.elements['contatoNome'].value);
+  var mensagem = JSON.stringify(event.target.elements['taMensagem'].value);
+  array.push({
+    nome,
+    mensagem
+  })
+  alert("Mensagem Enviada!");
+  console.log(array); 
+})
 
-    if (current.length > 0) {
+let submeter = document.querySelector("#formSubmeter");
 
-      current[0].className = current[0].className.replace("ilumina", "");
+submeter.addEventListener('click', (event) => {
+localStorage.setItem('mensagens', JSON.stringify(array));
+array.length = 0;
+alert("Valores Enviados a Local Storage com sucesso!");
+})
 
-    }
 
-    this.className += "ilumina";
-  });
-}
+
+var botaoLS = document.querySelector("#limparLS");
+botaoLS.addEventListener("click", function () {
+  localStorage.clear();
+  alert("Local Storage limpa com sucesso!");
+});
+

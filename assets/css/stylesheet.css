@@ -143,6 +143,10 @@ footer div a {
     color: white;
 }
 
+#formContato
+{
+    padding: 2rem;
+}
 main div a {
     color: black;
 }
