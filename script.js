@@ -18,6 +18,9 @@ let submeter = document.querySelector("#formSubmeter");
 submeter.addEventListener('click', (event) => {
 localStorage.setItem('mensagens', JSON.stringify(array));
 array.length = 0;
+const voltar = window.location.href;
+localStorage.setItem('link', voltar);
+console.log(localStorage.getItem("link"));
 alert("Valores Enviados a Local Storage com sucesso!");
 })
 

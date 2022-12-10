@@ -143,10 +143,11 @@ footer div a {
     color: white;
 }
 
-#formContato
-{
-    padding: 2rem;
+a {
+    text-decoration: none;
+    color: black;
 }
+
 main div a {
     color: black;
 }
