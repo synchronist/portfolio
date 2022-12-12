@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <script src="https://kit.fontawesome.com/9142c6bc85.js" crossorigin="anonymous"></script>
     <title>Portfolio - Desafio Iuul!</title>
-    <script src="script.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -62,16 +62,19 @@
             <p>E o github aqui: </p><a href="https://www.github.com/synchronist" class="githubIcon" target="blank"><i
                     class="fa-brands fa-github"></i></a>
         </div>
-
-        <div id="formContato">
+        <form id="formContato">
+        <div id="div-form">
             <label for="fname">Seu nome: </label><br>
-            <input type="text" id="fname" name="fname"><br>
-        </div>
-        <div id="formContato">
+            <input type="text" id="contatoNome" placeholder="Digite o seu nome:"><br>
+
             <label for="msg">Sua mensagem: </label><br>
-            <textarea rows="10" cols="100" maxlength="500"></textarea><br>
-            <input type="submit" value="Enviar">
+            <textarea rows="10" cols="100" maxlength="500"  placeholder="Digite sua mensagem aqui:" id="taMensagem"></textarea><br>
+            <button id="adicionar-mensagem" class="botao bto-principal" type="submit">Enviar Mensagem</button>
+            
         </div>
+        </form>
+        <button id="limparLS" class="botao bto-principal">Limpar Local Storage</button>
+        <button id="formSubmeter" class="botao bto-principal"><a href=listandomsgs.html target="blank">Lista de Mensagens</a></button>
     </main>
 
 
@@ -93,7 +96,9 @@
             <a href="https://www.github.com/synchronist" class="githubIcon" target="blank"><i
                     class="fa-brands fa-github"></i></a>
         </div>
+
     </footer>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
